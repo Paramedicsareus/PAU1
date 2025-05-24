@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paramedics Are Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #1e1e1e; color: white; padding: 20px; text-align: center; }
+    header { display: flex; align-items: center; justify-content: center; padding: 1rem; }
+    nav { background: #333; color: white; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { color: #00ccff; }
+    .hero { padding: 60px 20px; text-align: center; background: #f5f5f5; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .cta-button {
+      background: #1e1e1e;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-button:hover { background: #333; }
+    .section { padding: 40px 20px; }
+    .section h2 { font-size: 2em; margin-bottom: 20px; }
+    .services, .industries { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #f0f0f0; padding: 20px; border-radius: 8px; }
+    form input, form textarea, form button { display: block; width: 100%; margin: 10px 0; padding: 10px; }
+    form button { background: #1e1e1e; color: white; border: none; cursor: pointer; }
+    form button:hover { background: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">
+      <img src="images/logo.png" alt="Paramedics Are Us Logo" style="height: 60px;" />
+    </a>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+
+  <div id="home" class="hero">
+    <h1>Struggling to Fill Paramedic Shifts?</h1>
+    <p>We supply qualified paramedics across Australia for healthcare providers experiencing staffing shortages.</p>
+    <a href="#contact" class="cta-button">Request Staff Now</a>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>Paramedics Are Us was founded by experienced paramedics who understand the operational challenges of healthcare staffing. We provide fast, flexible, and reliable labour hire services across Australia.</p>
+  </div>
+
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><h3>Paramedic Labour Hire</h3><p>Short or long-term staffing for medical providers.</p></div>
+      <div class="card"><h3>Event Coverage</h3><p>Trained paramedics for festivals, sports, and more.</p></div>
+      <div class="card"><h3>Remote & Industrial Sites</h3><p>Deployments for mining, construction, and regional areas.</p></div>
+      <div class="card"><h3>Emergency Standby</h3><p>Support for critical operations and high-risk environments.</p></div>
+    </div>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact / Request Paramedics</h2>
+    <form>
+      <input type="text" placeholder="Company Name" required>
+      <input type="text" placeholder="Contact Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Service Required (e.g., event, site cover)" required>
+      <input type="text" placeholder="Location & Duration" required>
+      <textarea placeholder="Additional Notes"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+
+  <div id="faq" class="section">
+    <h2>FAQs</h2>
+    <div class="card">
+      <h3>What qualifications do your paramedics have?</h3>
+      <p>All paramedics are AHPRA registered and clinically experienced.</p>
+    </div>
+    <div class="card">
+      <h3>How fast can you provide staff?</h3>
+      <p>We can often fill roles within 24–48 hours depending on your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Do you cover rural or remote areas?</h3>
+      <p>Yes — we have staff available across Australia, including remote regions.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Paramedics Are Us &copy; 2025 | ABN: [Your ABN] | info@paramedicsareus.com | 0414 920 783</p>
+  </footer>
+</body>
+</html>
